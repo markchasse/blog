@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jet.dashboard',
     'jet',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -121,3 +122,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Folder in which you want to store your images, in this example it's the sub folder 'media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
+# Temporary folder for upload, in this example is the subfolder 'upload'
+# UPLOAD_TO = os.path.join(BASE_DIR, 'images/upload')
+
+MEDIA_URL ='/uploads/'
